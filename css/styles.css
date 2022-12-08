@@ -1,0 +1,256 @@
+:root {
+    --color-title:#2E2F42;
+    --color-text:#434455;
+    --color-accent:#4D5AE5; 
+    --color-white: #FFFFFF;
+    --color-but-active: #404BBF;
+    --color-light: #F4F4FD;
+    --color-soft: #E7E9FC;
+}
+
+body {
+    font-family: "Roboto", sans-serif ;
+    color: var(--color-accent);
+}
+
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus 
+.menu-link:active {
+    color: var(--color-accent);
+}
+
+.menu-link.current {
+    color: var(--color-accent);
+}
+
+
+
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+    text-transform: uppercase;
+}
+
+.logo-span {
+    color: var(--color-accent);
+}
+
+
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.contact-mail {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--color-accent);
+}
+
+.contact-phone-number {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+    color: var(--color-accent);
+}
+
+/* ============HERO============= */
+
+.hero-title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+}
+
+.hero {
+    background: var(--color-title)
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    width: 170px;
+    height: 51px;
+    background-color: var(--color-accent);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.button:hover,
+.button:focus {
+    background: var(--color-accent);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
+}
+
+.button:active {
+    background-color: var(--color-but-active);
+}
+
+/* ===================ABOUT============== */
+
+.about-title,
+.filter-title {
+    font-size: 0;
+}
+
+.about-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+/* ======================WORKS======================= */
+
+.works-title,
+.team-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-title);
+}
+
+/* =====================TEAM===================== */
+
+.team {
+    background: var(--color-light);
+}
+
+.team-title-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
+.team-item {
+    background: var(--color-white);
+    padding: 0px 0px 32px;
+    width: 264px;
+    height: 380px;
+    left: 156px;
+    top: 1783px;
+}
+
+/* ================FOOTER===================== */
+
+.footer {
+    background-color: var(--color-title);
+}
+
+.logo-footer {
+    color: var(--color-light);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-soft);
+}
+
+
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1,5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+    background: var(--color-light);
+    border: 1px solid var(--color-soft);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+/* =================FILTER================== */
+
+.btn:hover,
+.btn:focus {
+    color: var(--color-white);
+    background: var(--color-accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+/* =================PORTFOLIO================== */
+
+.list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-title);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text);
+}
+
