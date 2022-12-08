@@ -8,6 +8,26 @@
     --color-soft: #E7E9FC;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: "Roboto", sans-serif ;
     color: var(--color-accent);
@@ -22,6 +42,37 @@ body {
     text-decoration: none;
 }
 
+.container {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: var(--color-white);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu,
+.contacts {
+    display: flex;
+    align-items: center;
+} 
+
 .menu-link:hover,
 .menu-link:focus 
 .menu-link:active {
@@ -32,9 +83,6 @@ body {
     color: var(--color-accent);
 }
 
-
-
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -43,6 +91,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--color-title);
     text-transform: uppercase;
+    margin-right: 77px;
+
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .logo-span {
@@ -58,11 +112,16 @@ body {
     color: var(--color-title);
 }
 
+.contacts {
+    margin-left: auto;
+}
+
 .contact-mail {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text);
+    margin-right: 40px;
 }
 
 .contact-mail:hover,
@@ -91,9 +150,13 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-white);
+    margin-bottom: 48px;
+
 }
 
 .hero {
+    padding-top: 172px;
+    padding-bottom: 172px;
     background: var(--color-title)
 }
 
@@ -102,17 +165,19 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    align-items: center;
     letter-spacing: 0.04em;
     color: var(--color-white);
-    width: 170px;
-    height: 51px;
     background-color: var(--color-accent);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .button:hover,
 .button:focus {
@@ -127,6 +192,17 @@ body {
 
 /* ===================ABOUT============== */
 
+.about-list {
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-item:not(:last-child) {
+    margin-right: 24px;
+}
+
 .about-title,
 .filter-title {
     font-size: 0;
@@ -138,6 +214,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-title);
+    margin-bottom: 8px;
 }
 
 .about-text {
