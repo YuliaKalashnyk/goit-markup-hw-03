@@ -157,10 +157,11 @@ body {
 .hero {
     padding-top: 172px;
     padding-bottom: 172px;
-    background: var(--color-title)
+    background: var(--color-title);
+    text-align: center;
 }
 
-.button {
+.hero-button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -174,8 +175,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
     padding: 16px 32px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -192,20 +191,39 @@ body {
 
 /* ===================ABOUT============== */
 
-.about-list {
-    display: flex;
-    align-items: center;
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+
+
+.about-list {
+    display: flex;
+    align-items: center;
+}
+
 
 .about-item:not(:last-child) {
     margin-right: 24px;
 }
 
+.about-item {
+    flex-basis: calc(100%/4)
+}
+
 .about-title,
 .filter-title {
-    font-size: 0;
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
 .about-list-title {
@@ -227,6 +245,10 @@ body {
 
 /* ======================WORKS======================= */
 
+.works  {
+    padding-top: 0;
+}
+
 .works-title,
 .team-title {
     font-weight: 500;
@@ -236,7 +258,18 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-title);
+    margin-bottom: 72px;
 }
+
+.work-list,
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+
 
 /* =====================TEAM===================== */
 
@@ -250,7 +283,16 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-title);
+    margin-bottom: 8px;
 }
+
+.team-name-position {
+    padding: 32px 16px;
+    text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
 
 .position {
     font-size: 16px;
@@ -272,17 +314,22 @@ body {
 
 .footer {
     background-color: var(--color-title);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer {
     color: var(--color-light);
 }
 
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-soft);
+    width: 264px;
+    margin-top: 16px;
 }
 
 
@@ -302,6 +349,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     padding: 8px 16px;
+    
 }
 
 /* =================FILTER================== */
@@ -322,6 +370,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-title);
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -329,5 +378,36 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text);
+}
+
+
+.filter-list {
+    display: flex;
+    padding-top: 96px;
+    padding-bottom: 72px;
+    text-align: center;
+    gap: 24px;
+    width: 586px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.filter {
+    padding-bottom: 120px;
+}
+
+.portfolio-border {
+    border: 0.5px solid var(--color-light);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
