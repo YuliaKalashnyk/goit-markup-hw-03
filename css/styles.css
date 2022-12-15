@@ -102,14 +102,9 @@ body {
     color: var(--color-accent);
 }
 
-.menu-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
-}
-
 
 .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -124,6 +119,7 @@ body {
 }
 
 .contact-mail {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -139,6 +135,7 @@ body {
 }
 
 .contact-phone-number {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -220,7 +217,7 @@ body {
 }
 
 .about-item {
-    width: calc((100%-72px)/4);
+    width: calc((100% - 72px)/4);
 }
 
 .about-title,
@@ -323,7 +320,7 @@ body {
 
 .team-item {
     background: var(--color-white);
-    width: calc((100%-72px)/4);
+    width: calc((100% - 72px)/4);
 }
 .team-item:not(:last-child) {
     margin-right: 24px;
@@ -357,7 +354,7 @@ body {
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     text-align: center;
@@ -367,7 +364,7 @@ body {
     border: 1px solid var(--color-soft);
     border-radius: 4px;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 12px 24px;
     
 }
 
@@ -416,10 +413,9 @@ body {
     display: flex;
     text-align: center;
     gap: 24px;
-    width: 586px;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 92px;
     margin-bottom: 72px;
 }
 
@@ -437,6 +433,7 @@ body {
 }
 
 .filter {
+    padding-top: 92px;
     padding-bottom: 120px;
 }
 
@@ -446,5 +443,6 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
